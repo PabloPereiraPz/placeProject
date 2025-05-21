@@ -13,7 +13,6 @@ import { CategoriasModule } from '../categorias/categorias.module';
   imports: [
     CommonModule,
     TemplateRoutingModule,
-    CategoriasModule,
   ]
 })
 export class TemplateModule { }

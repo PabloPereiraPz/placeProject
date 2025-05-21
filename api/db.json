@@ -1,0 +1,24 @@
+{
+  "categorias": [
+    {
+      "id": "1",
+      "nome": "Restaurantes",
+      "descricao": "Lugares para comer"
+    },
+    {
+      "id": "2",
+      "nome": "Shoppings",
+      "descricao": "Lugares para fazer compras e passear"
+    },
+    {
+      "id": "b613",
+      "nome": "Praia",
+      "descricao": "Praias em Santa Catarina"
+    },
+    {
+      "id": "b378",
+      "nome": "Restaurantes",
+      "descricao": "Restaurantes para conhecer em SC"
+    }
+  ]
+}

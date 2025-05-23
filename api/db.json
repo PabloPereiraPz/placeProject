@@ -12,13 +12,36 @@
     },
     {
       "id": "b613",
-      "nome": "Praia",
-      "descricao": "Praias em Santa Catarina"
+      "nome": "Praias",
+      "descricao": "Praias ao redor do mundo! "
     },
     {
       "id": "b378",
       "nome": "Restaurantes",
-      "descricao": "Restaurantes para conhecer em SC"
+      "descricao": "Restaurantes interessantes com gastronomia local"
+    },
+    {
+      "id": "5ada",
+      "nome": "Museus",
+      "descricao": "Museus históricos"
+    }
+  ],
+  "lugares": [
+    {
+      "id": "a36e",
+      "nome": "Praia dos Ingleses",
+      "categoria": "Praias",
+      "localizacao": "Santa Catarina ",
+      "urlFoto": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/05/97/26/98/praia-dos-ingleses.jpg?w=1200&h=-1&s=1",
+      "avaliacao": "5"
+    },
+    {
+      "id": "1460",
+      "nome": "Museu Poomerano",
+      "categoria": "Museus",
+      "localizacao": "Pomerode",
+      "urlFoto": "https://upload.wikimedia.org/wikipedia/commons/2/23/Museupomerano.jpg",
+      "avaliacao": "4"
     }
   ]
 }

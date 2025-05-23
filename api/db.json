@@ -42,6 +42,22 @@
       "localizacao": "Pomerode",
       "urlFoto": "https://upload.wikimedia.org/wikipedia/commons/2/23/Museupomerano.jpg",
       "avaliacao": "4"
+    },
+    {
+      "id": "4254",
+      "nome": "Praia do Rosa",
+      "categoria": "Praias",
+      "localizacao": "Santa Catarina",
+      "urlFoto": "https://www.maladeaventuras.com/wp-content/uploads/2017/03/praia-do-rosa-rosa-sul.jpg",
+      "avaliacao": "5"
+    },
+    {
+      "id": "c336",
+      "nome": "Restaurante Madalosso",
+      "categoria": "Restaurantes",
+      "localizacao": "Curitiba",
+      "urlFoto": "https://cdn.bandnewsfmcuritiba.com/band/wp-content/uploads/2023/02/17.02-MADALOSSO-850x560.jpg",
+      "avaliacao": "4"
     }
   ]
 }

@@ -12,22 +12,28 @@ import { LugarService } from '../../lugares/lugar.service';
 })
 export class GaleriaComponent implements OnInit {
 
-
   lugares: Lugar[] = []
   categoriasFiltro: Categoria[] = []
+  nomeFiltro: string = ''
+  categoriaFiltro: string = ''
 
   constructor(
     private lugarService: LugarService,
-    private categoriaService: CategoriaService
+    private categoriaService: CategoriaService,
+
   ) {
-
   }
-
   ngOnInit(): void {
     this.categoriaService.listarTodas().subscribe(categorias => this.categoriasFiltro = categorias);
 
     this.lugarService.listarTodas().subscribe(lugares => this.lugares = lugares); // tomar cuidado pra não confundir com propiedade lugares.
-
   }
 
+  totalEstrelas(lugar: Lugar): string {
+    return '&#9733;'.repeat(lugar.avaliacao || 0) + '&#9734;'.repeat(5 - (lugar.avaliacao || 0));
+  }
+
+  filtrar() {
+    this.lugarService.filtrar(this.nomeFiltro, this.categoriaFiltro).subscribe(resultado => this.lugares = resultado);
+  }
 }

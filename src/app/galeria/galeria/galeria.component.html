@@ -1,13 +1,33 @@
-<div class="p-4 bg-white shadow"> <!-- Filtros ** -->
-    <div class="flex flex-column md:flex-row items-center justify-center gap-4">
-        <input type="text" placeholder="Pesquise pelo nome do local: "
-            class="w-full border border-gray-300 p-2 rounded shadow-sm focus:ring focus: ring-blue-400">
+<form #frm="ngForm">
+    <div class="p-4 bg-white shadow"> <!-- Filtros ** -->
+        <div class="flex flex-column md:flex-row items-center justify-center gap-4">
+            <input type="text" name="nomeFiltro" [(ngModel)]="nomeFiltro" placeholder="Pesquise pelo nome do local: "
+                class="w-full border border-gray-300 p-2 rounded shadow-sm focus:ring focus: ring-blue-400">
 
-        <select class="w-full border border-gray-300 p-2 rounded shadow-sm focus:ring focus: ring-blue-400">
-            <option [value]=""> Todas as categorias </option>
-            <option *ngFor="let catego of categoriasFiltro" [value]="catego.nome"> {{ catego.nome }} </option>
-        </select>
+            <select name="categoriaFiltro" [(ngModel)]="categoriaFiltro"
+                class="w-full border border-gray-300 p-2 rounded shadow-sm focus:ring focus: ring-blue-400">
+                <option [value]="-1"> Todas as categorias </option>
+                <option *ngFor="let catego of categoriasFiltro" [value]="catego.nome"> {{ catego.nome }} </option>
+            </select>
+
+            <button (click)="filtrar()" class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600"> Pesquisar
+            </button>
+        </div>
     </div>
+</form>
 
-    <!-- FAZER OS CARDS AGORA!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!  -->
+<div id="lugareslist" class="p-4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+    <!-- seguir padrão de md:grid-cols (tamanho da coluna) depende do dispositivo que a pessoa está acessando. -->
+    <div class="bg-white shadow rounded overflow-hidden" *ngFor="let lugar of lugares">
+        <img [src]="lugar.urlFoto" [alt]="lugar.nome" class="w-full h-40 object-cover">
+        <div class="p-4">
+            <h2 class="text-lg font-semibold">{{lugar.nome}}</h2>
+            <p class="text-gray-500">Categoria: <span class="text-blue-500">{{lugar.categoria}}</span></p>
+            <p class="text-gray-500">Localização: <span class="text-blue-500">{{ lugar.localizacao}}</span></p>
+            <div class="mt-2 flex item-center">
+                <span class="text-yellow-500" [innerHTML]="totalEstrelas(lugar)"></span>
+                <span class="ml-2 text-gray-600">{{lugar.avaliacao}}</span>
+            </div>
+        </div>
+    </div>
 </div>

@@ -15,13 +15,11 @@ const routes: Routes = [
       {
         path: 'lugares',
         loadChildren: () => import('../lugares/lugares.module').then(m => m.LugaresModule),
-        pathMatch: 'full',
         data: { titulo: 'Lugares', subTitulo: 'Cadastro de lugares' }
       },
       {
         path: 'galeria',
         loadChildren: () => import('../galeria/galeria.module').then(m => m.GaleriaModule),
-        pathMatch: 'full',
         data: { titulo: 'Lista de lugares ', subTitulo: 'Descubra lugares incríveis ao redor do mundo! ' }
       },
     ]

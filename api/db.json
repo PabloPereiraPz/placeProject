@@ -24,6 +24,11 @@
       "id": "5ada",
       "nome": "Museus",
       "descricao": "Museus históricos"
+    },
+    {
+      "nome": "Pousada Praia/Cidade",
+      "descricao": "Pousadas nas praias mais lindas do Brasil e também para quem gosta de cidade aproveitar nas cidades mais visitadas!",
+      "id": "zyAWyY0"
     }
   ],
   "lugares": [
@@ -58,6 +63,22 @@
       "localizacao": "Curitiba",
       "urlFoto": "https://cdn.bandnewsfmcuritiba.com/band/wp-content/uploads/2023/02/17.02-MADALOSSO-850x560.jpg",
       "avaliacao": "4"
+    },
+    {
+      "nome": "Fernando de Noronha",
+      "categoria": "Praias",
+      "localizacao": "Pernambuco",
+      "urlFoto": "https://blog.atalaianoronha.com.br/assets/uploads/2018/12/istock-1302338178-1-1024x683.jpg",
+      "avaliacao": "5",
+      "id": "RKI525T"
+    },
+    {
+      "nome": "Banana House",
+      "categoria": "Pousada Praia/Cidade",
+      "localizacao": "Bombinhas",
+      "urlFoto": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/10/3f/a9/b2/pool--v17135603.jpg?w=900&h=500&s=1",
+      "avaliacao": "3",
+      "id": "ItsOYqw"
     }
   ]
 }

@@ -1,0 +1,14 @@
+<div class="py-10 bg-gradient-to-r from-blue-500 to-blue-700 text-white flex flex-col justify-center items-center p-4">
+    <div class="text-center px-6">
+        <h1 class="text-4xl font-bold mb-4"> Seja bem vindo a lista de incríveis lugares ao redor do mundo! </h1>
+        <p> Explore, organize e compartilhe os lugares que você já visitou! </p>
+    </div>
+
+    <button (click)="navegar();" *ngIf="isLoggedIn()"
+        class="mt-5 bg-white text-blue-700 font-semibold py-3 px-8 rounded-full hover:bg-gray-100 flex space-x-3 items-center">
+        Olá! {{profile?.name}}, clique aqui para navegar em nosso portal!
+    </button>    <button (click)="logarGoogle();" *ngIf="!isLoggedIn()"
+        class="bg-white text-blue-700 font-semibold py-3 px-8 rounded-full hover:bg-gray-100 flex space-x-3 items-center mt-5">
+        <img width="30px" height="30px" src="https://img.icons8.com/?size=512&id=17949&format=png" alt="Icone Google - Login"> Logar com Google
+    </button>
+</div>

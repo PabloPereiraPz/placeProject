@@ -8,14 +8,20 @@ const routes: Routes = [
     component: LayoutComponent,
     children: [
       {
-        path:'categorias',
-        loadChildren: () => import('../categorias/categorias.module').then(m => m.CategoriasModule)
+        path: 'categorias',
+        loadChildren: () => import('../categorias/categorias.module').then(m => m.CategoriasModule),
+        data: { titulo: 'Categorias', subTitulo: 'Cadastro de categorias' }
       },
       {
         path: 'lugares',
-        loadChildren: () => import ('../lugares/lugares.module').then(m => m.LugaresModule),
-        pathMatch: 'full'
-      }
+        loadChildren: () => import('../lugares/lugares.module').then(m => m.LugaresModule),
+        data: { titulo: 'Lugares', subTitulo: 'Cadastro de lugares' }
+      },
+      {
+        path: 'galeria',
+        loadChildren: () => import('../galeria/galeria.module').then(m => m.GaleriaModule),
+        data: { titulo: 'Lista de lugares ', subTitulo: 'Descubra lugares incríveis ao redor do mundo! ' }
+      },
     ]
   }
 ];

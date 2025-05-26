@@ -12,13 +12,73 @@
     },
     {
       "id": "b613",
-      "nome": "Praia",
-      "descricao": "Praias em Santa Catarina"
+      "nome": "Praias",
+      "descricao": "Praias ao redor do mundo! "
     },
     {
       "id": "b378",
       "nome": "Restaurantes",
-      "descricao": "Restaurantes para conhecer em SC"
+      "descricao": "Restaurantes interessantes com gastronomia local"
+    },
+    {
+      "id": "5ada",
+      "nome": "Museus",
+      "descricao": "Museus históricos"
+    },
+    {
+      "nome": "Pousada Praia/Cidade",
+      "descricao": "Pousadas nas praias mais lindas do Brasil e também para quem gosta de cidade aproveitar nas cidades mais visitadas!",
+      "id": "zyAWyY0"
+    }
+  ],
+  "lugares": [
+    {
+      "id": "a36e",
+      "nome": "Praia dos Ingleses",
+      "categoria": "Praias",
+      "localizacao": "Santa Catarina ",
+      "urlFoto": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/05/97/26/98/praia-dos-ingleses.jpg?w=1200&h=-1&s=1",
+      "avaliacao": "5"
+    },
+    {
+      "id": "1460",
+      "nome": "Museu Poomerano",
+      "categoria": "Museus",
+      "localizacao": "Pomerode",
+      "urlFoto": "https://upload.wikimedia.org/wikipedia/commons/2/23/Museupomerano.jpg",
+      "avaliacao": "4"
+    },
+    {
+      "id": "4254",
+      "nome": "Praia do Rosa",
+      "categoria": "Praias",
+      "localizacao": "Santa Catarina",
+      "urlFoto": "https://www.maladeaventuras.com/wp-content/uploads/2017/03/praia-do-rosa-rosa-sul.jpg",
+      "avaliacao": "5"
+    },
+    {
+      "id": "c336",
+      "nome": "Restaurante Madalosso",
+      "categoria": "Restaurantes",
+      "localizacao": "Curitiba",
+      "urlFoto": "https://cdn.bandnewsfmcuritiba.com/band/wp-content/uploads/2023/02/17.02-MADALOSSO-850x560.jpg",
+      "avaliacao": "4"
+    },
+    {
+      "nome": "Fernando de Noronha",
+      "categoria": "Praias",
+      "localizacao": "Pernambuco",
+      "urlFoto": "https://blog.atalaianoronha.com.br/assets/uploads/2018/12/istock-1302338178-1-1024x683.jpg",
+      "avaliacao": "5",
+      "id": "RKI525T"
+    },
+    {
+      "nome": "Banana House",
+      "categoria": "Pousada Praia/Cidade",
+      "localizacao": "Bombinhas",
+      "urlFoto": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/10/3f/a9/b2/pool--v17135603.jpg?w=900&h=500&s=1",
+      "avaliacao": "3",
+      "id": "ItsOYqw"
     }
   ]
 }

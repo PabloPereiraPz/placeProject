@@ -6,7 +6,8 @@ const routes: Routes = [
   {
     path: '',
     component: GaleriaComponent,
-    pathMatch: 'full'
+    pathMatch: 'full',
+    data: { animation: 'galeria' }
   }
 ];
 

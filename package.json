@@ -7,11 +7,14 @@
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "server": "json-server ./api/db.json"
+    "server": "json-server --watch ./api/db.json --port 3000 --host 0.0.0.0",
+    "server:production": "json-server ./api/db.production.json --port 4000",
+    "build:prod": "ng build --configuration production --base-href=/placeProject/",
+    "deploy": "npm run build:prod && npx angular-cli-ghpages --dir=dist/place-project/browser"
   },
   "private": true,
   "dependencies": {
-    "@angular/animations": "^19.0.0",
+    "@angular/animations": "^19.2.13",
     "@angular/common": "^19.0.0",
     "@angular/compiler": "^19.0.0",
     "@angular/core": "^19.0.0",
@@ -32,6 +35,7 @@
     "@angular/cli": "^19.0.2",
     "@angular/compiler-cli": "^19.0.0",
     "@types/jasmine": "~5.1.0",
+    "angular-cli-ghpages": "^2.0.3",
     "jasmine-core": "~5.4.0",
     "json-server": "^0.16.3",
     "karma": "~6.4.0",

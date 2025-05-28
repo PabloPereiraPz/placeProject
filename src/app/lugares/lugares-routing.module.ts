@@ -6,7 +6,8 @@ const routes: Routes = [
   {
     path: '',
     component: LugarComponent,
-    pathMatch: 'full'
+    pathMatch: 'full',
+    data: { animation: 'lugares' }
   }
 ];
 

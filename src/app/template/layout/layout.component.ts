@@ -1,14 +1,16 @@
 import { Component, OnInit } from '@angular/core';
 import { LayoutProps } from './layoutProps'
-import { ActivatedRoute, Router } from '@angular/router';
+import { ActivatedRoute, Router, RouterOutlet } from '@angular/router';
 import { filter, map } from 'rxjs'
 import { AuthgoogleService } from '../../authgoogle.service';
+import { slideInAnimation } from '../../route-animations';
 
 @Component({
   selector: 'app-layout',
   standalone: false,
   templateUrl: './layout.component.html',
-  styleUrl: './layout.component.scss'
+  styleUrl: './layout.component.scss',
+  animations: [slideInAnimation]
 })
 export class LayoutComponent implements OnInit {
   props: LayoutProps = { titulo: '', subTitulo: '' };
@@ -38,5 +40,9 @@ export class LayoutComponent implements OnInit {
 
   logout() {
     this.loginSerivce.logout();
+  }
+
+  prepareRoute(outlet: RouterOutlet) {
+    return outlet && outlet.activatedRouteData && outlet.activatedRouteData['animation'];
   }
 }

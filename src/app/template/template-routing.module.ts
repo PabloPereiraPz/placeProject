@@ -6,21 +6,32 @@ const routes: Routes = [
   {
     path: '',
     component: LayoutComponent,
-    children: [
-      {
+    children: [      {
         path: 'categorias',
         loadChildren: () => import('../categorias/categorias.module').then(m => m.CategoriasModule),
-        data: { titulo: 'Categorias', subTitulo: 'Cadastro de categorias' }
+        data: { 
+          titulo: 'Categorias', 
+          subTitulo: 'Cadastro de categorias',
+          animation: 'categorias'
+        }
       },
       {
         path: 'lugares',
         loadChildren: () => import('../lugares/lugares.module').then(m => m.LugaresModule),
-        data: { titulo: 'Lugares', subTitulo: 'Cadastro de lugares' }
+        data: { 
+          titulo: 'Lugares', 
+          subTitulo: 'Cadastro de lugares',
+          animation: 'lugares'
+        }
       },
       {
         path: 'galeria',
         loadChildren: () => import('../galeria/galeria.module').then(m => m.GaleriaModule),
-        data: { titulo: 'Lista de lugares ', subTitulo: 'Descubra lugares incríveis ao redor do mundo! ' }
+        data: { 
+          titulo: 'Lista de lugares ', 
+          subTitulo: 'Descubra lugares incríveis ao redor do mundo! ',
+          animation: 'galeria'
+        }
       },
     ]
   }

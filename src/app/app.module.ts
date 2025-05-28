@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { OAuthModule } from 'angular-oauth2-oidc';
 
 import { AppRoutingModule } from './app-routing.module';
@@ -12,9 +13,9 @@ import { provideOAuthClient } from 'angular-oauth2-oidc'
   declarations: [
     AppComponent,
     LandingpageComponent
-  ],
-  imports: [
+  ],  imports: [
     BrowserModule,
+    BrowserAnimationsModule,
     AppRoutingModule,
     OAuthModule.forRoot()
   ],

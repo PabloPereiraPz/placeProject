@@ -1,0 +1,17 @@
+{
+  "version": 2,
+  "outputDirectory": "dist/placeProject/browser",
+  "routes": [
+    {
+      "handle": "filesystem"
+    },
+    {
+      "src": "/api/(.*)",
+      "dest": "/api/$1"
+    },
+    {
+      "src": "/(.*)",
+      "dest": "/index.html"
+    }
+  ]
+}

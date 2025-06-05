@@ -1,6 +1,5 @@
 {
   "version": 2,
-  "outputDirectory": "dist/placeProject/browser",
   "rewrites": [
     {
       "source": "/api/(.*)",
@@ -9,30 +8,6 @@
     {
       "source": "/(.*)",
       "destination": "/index.html"
-    }
-  ],
-  "routes": [
-    { 
-      "handle": "filesystem"
-    },
-    {
-      "src": "/api/.*",
-      "dest": "/api/index.js"
-    },
-    {
-      "src": "/(.*)",
-      "dest": "/index.html"
-    }
-  ],
-  "headers": [
-    {
-      "source": "/(.*)",
-      "headers": [
-        {
-          "key": "Cache-Control",
-          "value": "public, max-age=0, must-revalidate"
-        }
-      ]
     }
   ]
 }

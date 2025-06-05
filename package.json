@@ -8,9 +8,8 @@
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
     "server": "json-server --watch ./api/db.json --port 3000 --host 0.0.0.0",
-    "server:production": "json-server ./api/db.production.json --port 4000",
-    "build:prod": "ng build --configuration production",
-    "vercel-build": "ng build --configuration production",
+    "server:production": "json-server ./api/db.production.json --port 4000",    "build:prod": "ng build --configuration production",
+    "vercel-build": "npm install && ng build --configuration production",
     "dev": "concurrently \"npm run start\" \"npm run server\""
   },
   "private": true,  "dependencies": {
